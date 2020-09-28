@@ -12,8 +12,8 @@
         }
     ],
     "require":           {
-        "php":                ">=7.2",
-        "illuminate/support": "7.*",
+        "php":                ">=7.3",
+        "illuminate/support": "8.*",
         "intouch/newrelic":   "^2.0"
     },
     "require-dev":       {
