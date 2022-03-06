@@ -24,14 +24,6 @@ use Intouch\Newrelic\Newrelic;
 
 class NewrelicServiceProvider extends ServiceProvider
 {
-
-	/**
-	 * Indicates if loading of the provider is deferred.
-	 *
-	 * @var bool
-	 */
-	protected $defer = false;
-
 	/**
 	 * Bootstrap the application events.
 	 *
