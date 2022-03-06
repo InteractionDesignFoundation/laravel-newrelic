@@ -31,7 +31,7 @@ class NewrelicServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		$config = realpath( __DIR__ . '/../../config/config.php' );
+		$config = realpath( __DIR__ . '/../config/config.php' );
 		$this->mergeConfigFrom( $config, 'newrelic' );
 		$this->publishes( [ $config => config_path( 'newrelic.php' ) ], 'config' );
 
