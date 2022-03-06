@@ -1,37 +1,40 @@
 {
-    "name":              "intouch/laravel-newrelic",
-    "type":              "library",
-    "keywords":          ["newrelic", "new relic", "laravel"],
-    "homepage":          "https://github.com/In-Touch/laravel-newrelic",
-    "license":           "Apache 2.0",
-    "description":       "Laravel NewRelic Integration",
-    "authors":           [
+    "name": "intouch/laravel-newrelic",
+    "description": "Laravel NewRelic Integration",
+    "license": "Apache 2.0",
+    "type": "library",
+    "keywords": [
+        "newrelic",
+        "new relic",
+        "laravel"
+    ],
+    "authors": [
         {
-            "name":  "Patrick Leckey",
+            "name": "Patrick Leckey",
             "email": "pleckey@intouchinsight.com"
         }
     ],
-    "require":           {
-        "php":                ">=7.3",
+    "homepage": "https://github.com/In-Touch/laravel-newrelic",
+    "require": {
+        "php": ">=7.3",
         "illuminate/support": "8.*",
-        "intouch/newrelic":   "^2.0"
+        "intouch/newrelic": "^2.0"
     },
-    "require-dev":       {
-    },
-    "autoload":          {
+    "require-dev": {},
+    "minimum-stability": "dev",
+    "autoload": {
         "psr-0": {
             "Intouch\\LaravelNewrelic": "src/"
         }
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "Intouch\\LaravelNewrelic\\NewrelicServiceProvider"
-            ],
             "aliases": {
                 "Newrelic": "Intouch\\LaravelNewrelic\\Facades\\Newrelic"
-            }
+            },
+            "providers": [
+                "Intouch\\LaravelNewrelic\\NewrelicServiceProvider"
+            ]
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
