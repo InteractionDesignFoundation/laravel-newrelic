@@ -16,16 +16,27 @@
     ],
     "homepage": "https://github.com/In-Touch/laravel-newrelic",
     "require": {
-        "php": ">=7.3",
+        "php": ">=7.4",
         "illuminate/contracts": "^8.0|^9.0",
         "intouch/newrelic": "^2.0"
     },
-    "require-dev": {},
+    "require-dev": {
+        "orchestra/testbench": "^6.0|^7.0|^8.0",
+        "phpunit/phpunit": "^9.5"
+    },
     "minimum-stability": "dev",
     "autoload": {
         "psr-0": {
             "Intouch\\LaravelNewrelic": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4" : {
+            "Intouch\\LaravelNewrelic\\Tests\\" : "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
     },
     "extra": {
         "laravel": {

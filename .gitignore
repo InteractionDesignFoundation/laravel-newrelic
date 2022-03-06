@@ -2,7 +2,9 @@
 composer.phar
 composer.lock
 .DS_Store
-/tests
-phpunit.xml
 .env
 .idea
+
+# PHPUnit
+phpunit.xml
+.phpunit.result.cache
