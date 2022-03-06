@@ -31,7 +31,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer install --${{ matrix.dependency-version }} --prefer-dist --no-interaction
+          composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
         env:
           COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
 
