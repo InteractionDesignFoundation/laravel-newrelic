@@ -1,12 +1,14 @@
-# Laravel 5 NewRelic Service Provider
+# Laravel NewRelic Service Provider
 
 | Laravel Version | Package Tag | Supported |
 |-----------------|-------------|-----------|
-| 7.x.x | 3.0.x | yes |
-| 5.x.x | 2.2.x | yes |
-| 5.2.x | 2.1.x | yes |
-| 5.1.x | 2.0.x | yes |
-| 5.0.x | 2.0.x | no |
+| 9.x.x           | 4.0.x       | yes |
+| 8.x.x           | 4.0.x       | yes |
+| 7.x.x           | 3.0.x       | no |
+| 5.x.x           | 2.2.x       | no |
+| 5.2.x           | 2.1.x       | no |
+| 5.1.x           | 2.0.x       | no |
+| 5.0.x           | 2.0.x       | no |
 
 *[see below for Laravel 4.x support](https://github.com/In-Touch/laravel-newrelic#laravel-4x-support)*
 
@@ -52,7 +54,7 @@ other gathers their timings (in milliseconds).  These recorded metrics will show
 
 The `NewrelicCountingObserver` can be used for any observable model events, including your custom events.  The 
 `NewrelicTimingObserver` currently only supports the built-in Eloquent observable events (see 
-[Model Events](https://laravel.com/docs/5.1/eloquent#events) in the Laravel documentation).
+[Model Events](https://laravel.com/docs/master/eloquent#events) in the Laravel documentation).
 
 Using the observers is simple - wherever you choose to register your model observers, simply add:
 
