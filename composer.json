@@ -17,11 +17,11 @@
     "homepage": "https://github.com/In-Touch/laravel-newrelic",
     "require": {
         "php": ">=7.4",
-        "illuminate/contracts": "^8.0|^9.0",
+        "illuminate/contracts": "^8.0|^9.0|^10.0",
         "intouch/newrelic": "^2.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.22|^7.0",
+        "orchestra/testbench": "^6.22|^7.0|^8.0",
         "phpunit/phpunit": "^9.5|^10.0"
     },
     "minimum-stability": "dev",
